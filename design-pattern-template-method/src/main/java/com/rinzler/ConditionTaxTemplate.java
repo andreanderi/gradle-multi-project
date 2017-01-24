@@ -13,7 +13,7 @@ public abstract class ConditionTaxTemplate implements Tax{
 
 	}
 	
-	public abstract boolean useMaxTax(Budget budget);  
-	public abstract double getMaxTax(Budget budget);
-	public abstract double getMinTax(Budget budget);
+	protected abstract boolean useMaxTax(Budget budget);  
+	protected abstract double getMaxTax(Budget budget);
+	protected abstract double getMinTax(Budget budget);
 }
