@@ -1,2 +1,3 @@
 include 'design-pattern-strategy'
 include 'design-pattern-chain-of-responsibility'
+include 'design-pattern-template-method'
