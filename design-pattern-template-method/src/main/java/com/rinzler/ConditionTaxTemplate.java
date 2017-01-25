@@ -3,7 +3,7 @@ package com.rinzler;
 public abstract class ConditionTaxTemplate implements Tax{
 
 	@Override
-	public double calculateTheTax(Budget budget) {
+	public final double calculateTheTax(Budget budget) {
 		
 		if (useMaxTax(budget)){
 			return getMaxTax(budget);
