@@ -8,6 +8,10 @@ public class IceKingdomDuty extends Tax{
 		super(anotherTax);
 	}
 	
+	public IceKingdomDuty(){
+		super();
+	}
+	
 	@Override
 	public double calculateTheTax(Budget budget) {
 		return budget.getValue()*dutyMultiplier+ calculateAnotherTax(budget);
