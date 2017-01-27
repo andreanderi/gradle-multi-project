@@ -13,8 +13,9 @@ public class InvoiceBuilder {
 	private List<InvoiceItem> invoiceItens = new ArrayList<>();
 	private List<InvoiceAction> invoiceActionsToRun = new ArrayList<>();
 	
-	public InvoiceBuilder() {
+	public InvoiceBuilder(List<InvoiceAction> invoiceActionsToRun) {
 		this.dueDate = new Date();
+		this.invoiceActionsToRun = invoiceActionsToRun;
 	}
 
 	public InvoiceBuilder withValue(double value){
