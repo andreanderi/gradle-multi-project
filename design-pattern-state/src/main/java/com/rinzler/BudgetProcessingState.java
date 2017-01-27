@@ -2,9 +2,16 @@ package com.rinzler;
 
 public class BudgetProcessingState implements BudgetState{
 
+	private boolean alreadHasThisDiscount = false;
+	
 	@Override
 	public void applyDiscount(Budget budget) {
-		budget.value -= budget.value * 0.10;
+		if (!alreadHasThisDiscount){
+			budget.value -= budget.value * 0.10;
+			alreadHasThisDiscount = true;
+		}else{
+			throw new RuntimeException("no double discounts for this state, young lady!");	
+		}
 	}
 
 	@Override
