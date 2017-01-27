@@ -12,6 +12,10 @@ public class InvoiceBuilder {
 	private String paymentResponsible;
 	private List<InvoiceItem> invoiceItens = new ArrayList<>();
 	
+	public InvoiceBuilder() {
+		this.dueDate = new Date();
+	}
+
 	public InvoiceBuilder withValue(double value){
 		this.value = value;
 		return this;
@@ -32,8 +36,8 @@ public class InvoiceBuilder {
 		return this;
 	}
 	
-	public InvoiceBuilder withInvoiceItens(InvoiceItem item){
-		invoiceItens.add(item);
+	public InvoiceBuilder with(InvoiceItem newItem){
+		invoiceItens.add(newItem);
 		return this;
 	}
 	

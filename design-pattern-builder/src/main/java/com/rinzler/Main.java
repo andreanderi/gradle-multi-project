@@ -8,8 +8,8 @@ public class Main {
 		
 		Invoice invoice = new InvoiceBuilder().withAddress("sesame street 666")
 				.withDueDate(new Date())
-				.withInvoiceItens(new InvoiceItem("chips", 13))
-				.withInvoiceItens(new InvoiceItem("ice cream", 13))
+				.with(new InvoiceItem("chips", 13))
+				.with(new InvoiceItem("ice cream", 13))
 				.withPaymentResponsible("Finn the human")
 				.withValue(666)
 				.build();
