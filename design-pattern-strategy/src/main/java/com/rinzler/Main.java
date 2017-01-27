@@ -11,7 +11,6 @@ public class Main {
 		
 		System.out.println(bubbleGumTax.calculateTheTax(budget));
 		System.out.println(iceTax.calculateTheTax(budget));
-
 	}
 
 }
