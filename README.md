@@ -11,6 +11,8 @@ Use **gradle project** to list all projects under root folder.
 
 *Decorator
 
+*State
+
 *Builder
 
 *Observer
